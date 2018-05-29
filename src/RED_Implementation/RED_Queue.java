@@ -50,8 +50,7 @@ public class RED_Queue<T> extends Queue<T> {
         return pop();
     }
     
-    public static int count = 0;
-      
+    
     /**
      * Check if an object should be enqueued or not
      * 
@@ -62,7 +61,6 @@ public class RED_Queue<T> extends Queue<T> {
      */
     private boolean enqueue_check(){
         
-        count++;
         int size = size();
         
         if(size < instantAdmitCapacity)
